@@ -10,4 +10,4 @@ function getInterest(){
             windows.location.href("/src/nonmedical.html");
         }
     })
-}
+}//
