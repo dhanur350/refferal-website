@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <title>Refferal Website</title>
-</head>
-<body>
-    <h1>Refferal Website</h1>
-    <div class="form_container">
-        <div class="ref-form">
-            <form action="" method="get">
-                <div class="form-fields">
-                    <label for="name">Name</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div class="form-fields">
-                    <label for="name">Age</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div class="form-fields">
-                    <label for="name">DOB</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div class="form-fields">
-                    <label for="name">Interest</label>
-                    <a href="./src/nonmedical.html">Non-Medical</a>
-                    <select name="Interest" id="interest">
-                        <option value="non-medical">Non-Medical</option>
-                        <option value="medical">Medical</option>
-                        <option value="commerce">Commerce</option>
-                        <option value="humanity">Humanity</option>
-                    </select>
-                </div>
-                <div class="form-fields">
-                    <div class="button">
-                        <button type="submit">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Referral Website</title>
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+  </head>
+  <body>
+    <header class="speaker-form-header">
+      <h1>Referral Website</h1>
+      <p><em>Want to get some advice of choosing course? Fill out this form.</em></p>
+    </header>
+    <form action="" method="get" onsubmit="getInterest()" class="speaker-form" id="formref">
+      <div class="form-row">
+        <label for="full-name">Name</label>
+        <input id="full-name" name="full-name" type="text" />
+      </div>
+      <div class="form-row">
+        <label for="email">Age</label>
+        <input
+          id="age"
+          name="age"
+          type="text"
+          placeholder="Add your Age?"
+        />
+      </div>
+      <div class="form-row">
+        <label for="email">DOB</label>
+        <input
+          id="DOB"
+          name="DOB"
+          type="date"
+          placeholder="Add your Age?"
+        />
+      </div>
+      <div class="form-row">
+        <label for="name">Interest</label>
+        <select name="Interest" id="interest">
+            <option value="non-medical">Non-Medical</option>
+            <option value="medical">Medical</option>
+            <option value="commerce">Commerce</option>
+            <option value="humanity">Humanity</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label class="checkbox-label" for="available">
+          <input
+            id="available"
+            name="available"
+            type="checkbox"
+            value="is-available"
+          />
+          <span>I’ve checked the form filled above!</span>
+        </label>
+      </div>
+      <div class="form-row">
+        <button>Submit</button>
+      </div>
+    </form>
+    <script src="/src/js/index.js"></script>
+  </body>
 </html>
