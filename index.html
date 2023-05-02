@@ -10,7 +10,7 @@
       <h1>Referral Website</h1>
       <p><em>Want to get some advice of choosing course? Fill out this form.</em></p>
     </header>
-    <form action="" method="get" onsubmit="getInterest()" class="speaker-form" id="formref">
+    <form on="myfunction()" class="speaker-form" id="formref">
       <div class="form-row">
         <label for="full-name">Name</label>
         <input id="full-name" name="full-name" type="text" />
@@ -36,8 +36,8 @@
       <div class="form-row">
         <label for="name">Interest</label>
         <select name="Interest" id="interest">
-            <option value="non-medical">Non-Medical</option>
             <option value="medical">Medical</option>
+            <option value="non-medical">Non-Medical</option>
             <option value="commerce">Commerce</option>
             <option value="humanity">Humanity</option>
         </select>
@@ -54,7 +54,7 @@
         </label>
       </div>
       <div class="form-row">
-        <button>Submit</button>
+        <button onclick="myfunction()">Submit</button>
       </div>
     </form>
     <script src="/src/js/index.js"></script>
