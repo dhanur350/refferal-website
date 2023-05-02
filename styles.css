@@ -1,0 +1,70 @@
+:root{
+    --background-color:#8294C4;
+}
+
+body{
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-fields{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.form-fields > input{
+    margin-left: 1rem;
+}
+
+.form-fields > .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-fields > .button > button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.form-fields > select {
+    margin-left: 1rem;
+}
+
+.ref-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.ref-form > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
